@@ -17,6 +17,7 @@ export default function Home() {
 			<MyTitle>Do you want to meet someone on our team?</MyTitle>
 			<a href="/meet">Yes, please! (click here to meet them)</a>
 			<MyTitle><a href="/woohoo">Psst... you wanna go on a secret route? Follow me!</a></MyTitle>
+			<p>Made with 💖 by Lakshya Raj.</p>
 		</>
 	);
 }

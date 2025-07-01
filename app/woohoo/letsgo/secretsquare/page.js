@@ -16,7 +16,7 @@ export default function Home () {
 	}, []);
 	return (
 		<>
-			<div>Amazing! You're at the /woohoo/letsgo/secretsquare route O_O</div>
+			<p>Amazing! You're at the /woohoo/letsgo/secretsquare route O_O</p>
 			<p>This may or may not be the end. I can't promise there is a path forward... you'll have to figure out yourself. :P</p>
 			<p>(wink wink cursor moves again)</p>
 			<div style={{"pointerEvents":"none"}} className="text-black">
