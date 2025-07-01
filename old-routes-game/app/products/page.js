@@ -1,5 +1,5 @@
-import MyList from "@/components/MyList";
-import MyTitle from "@/components/MyTitle";
+import MyList from "@/oldcomponents/MyList";
+import MyTitle from "@/oldcomponents/MyTitle";
 
 export default function Home () {
 	const food = [

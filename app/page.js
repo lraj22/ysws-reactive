@@ -1,23 +1,19 @@
-import MyComponent from "@/components/MyComponent";
-import MyTitle from "@/components/MyTitle";
-import BigBox from "@/components/BigBox";
+import Title from "@/components/Title";
+import Footer from "@/components/Footer";
+import NavCard from "@/components/NavCard";
 
 export default function Home() {
-	const message = "You're awesome";
-	
 	return (
 		<>
-			<MyTitle>Hey there! Hello my fellow hackers :]</MyTitle>
-			<div>
-				<p>Here are my components:</p>
-				<MyComponent />
-				<p className="bg-yellow-800">Oh, by the way, do you want to <a href="/products">see our products</a>? They're pretty delightful!</p>
+			<Title>Learn about musical instruments</Title>
+			<p>You can learn about musical instruments from this website! We specialize in brass and woodwind instruments.</p>
+			<p>Select one of the cards below to learn more.</p>
+			<div className="cardContainer">
+				<NavCard href="/info" />
+				<NavCard href="/brass" />
+				<NavCard href="/woodwinds" />
 			</div>
-			<BigBox message={message} />
-			<MyTitle>Do you want to meet someone on our team?</MyTitle>
-			<a href="/meet">Yes, please! (click here to meet them)</a>
-			<MyTitle><a href="/woohoo">Psst... you wanna go on a secret route? Follow me!</a></MyTitle>
-			<p>Made with 💖 by Lakshya Raj.</p>
+			<Footer />
 		</>
 	);
 }

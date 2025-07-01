@@ -1,4 +1,4 @@
-import MyTitle from "@/components/MyTitle";
+import MyTitle from "@/oldcomponents/MyTitle";
 
 export default function Home () {
 	return (
