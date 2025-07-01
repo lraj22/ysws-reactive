@@ -11,7 +11,7 @@ export default function Home() {
 			<div>
 				<p>Here are my components:</p>
 				<MyComponent />
-				<p>Oh, by the way, do you want to <a href="/products">see our products</a>? They're pretty delightful!</p>
+				<p className="bg-yellow-800">Oh, by the way, do you want to <a href="/products">see our products</a>? They're pretty delightful!</p>
 			</div>
 			<BigBox message={message} />
 			<MyTitle>Do you want to meet someone on our team?</MyTitle>
