@@ -23,4 +23,36 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
+}
+
+.bigbox {
+	background-color: lightblue;
+	margin: 1em;
+	padding: 1em;
+	color: black;
+	border-radius: 8px;
+}
+
+.messagebox {
+	padding: 0.5em;
+	border: 2px solid blue;
+}
+
+.message {
+	text-align: center;
+	font-size: 3em;
+}
+
+a {
+	text-decoration: underline;
+}
+
+.secretSquare {
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 25%;
+	left: 35%;
+	cursor: pointer;
 }
