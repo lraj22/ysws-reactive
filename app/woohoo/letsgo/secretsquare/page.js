@@ -1,11 +1,19 @@
 "use client";
+import { useEffect } from "react";
 
 export default function Home () {
-	window.onkeydown = e => {
-		if (e.key === "n") {
-			location.href="/woohoo/letsgo/secretsquare/keyboard";
+	useEffect(() => {
+		function nextRoute (e) {
+			if (e.key === "n") {
+				location.href="/woohoo/letsgo/secretsquare/keyboard";
+			}
 		}
-	}
+		window.addEventListener("keydown", nextRoute);
+	
+		return () => {
+			window.removeEventListener("keydown", nextRoute);
+		};
+	}, []);
 	return (
 		<>
 			<div>Amazing! You're at the /woohoo/letsgo/secretsquare route O_O</div>
