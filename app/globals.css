@@ -78,6 +78,16 @@ p {
 	font-size: 1.5em;
 }
 
+.comment {
+	border-left: 2px solid white;
+	padding-left: 1em;
+	margin-bottom: 1em;
+}
+
+.small {
+	font-size: 0.75em;
+}
+
 footer {
 	position: fixed;
 	left: 0;

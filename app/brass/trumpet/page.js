@@ -2,11 +2,13 @@ import Title from "@/components/Title";
 import Footer from "@/components/Footer";
 import NavCard from "@/components/NavCard";
 import CommentsBox from "@/components/CommentsBox";
+import Author from "@/components/Author";
 
 export default function Home() {
 	return (
 		<>
 			<Title>Trumpet</Title>
+			<Author instrument="Trumpet" />
 			<p>Trumpets are the most popular of all brass instruments. Known for their amazing range and screaming high pitches, trumpets are an overall versatile instruments. They are also a valved instrument, just like the euphonium.</p>
 			<p>Trumpets are used in many different band scenarios. You can find them in concert, wind ensemble, and jazz! Who's your favorite trumpet player?</p>
 

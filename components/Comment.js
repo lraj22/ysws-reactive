@@ -1,8 +1,9 @@
-export default function Comment ({ instrument, author, text }) {
+export default function Comment ({ instrument, author, text, likes }) {
 	return (
 		<div className="comment">
-			<h3>{instrument} {">"} {author}</h3>
+			<h3><span className="small">{instrument} {">"} </span>{author}</h3>
 			<p>{text}</p>
+			<p className="small">Likes: {likes}</p>
 		</div>
 	);
 }

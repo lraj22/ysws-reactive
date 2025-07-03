@@ -2,11 +2,13 @@ import Title from "@/components/Title";
 import Footer from "@/components/Footer";
 import NavCard from "@/components/NavCard";
 import CommentsBox from "@/components/CommentsBox";
+import Author from "@/components/Author";
 
 export default function Home() {
 	return (
 		<>
 			<Title>Flute</Title>
+			<Author instrument="Flute" />
 			<p>Flutes are the soft-spoken group of the woodwinds. However, they are one of the most popular and are very interesting! They are thought to be one of the world's oldest instruments.</p>
 			<p>Flutes have keys that can be pressed, and a mouthpiece into which the musician blows to produce sound out of the instrument.</p>
 

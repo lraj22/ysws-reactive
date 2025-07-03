@@ -2,11 +2,13 @@ import Title from "@/components/Title";
 import Footer from "@/components/Footer";
 import NavCard from "@/components/NavCard";
 import CommentsBox from "@/components/CommentsBox";
+import Author from "@/components/Author";
 
 export default function Home() {
 	return (
 		<>
 			<Title>Euphonium</Title>
+			<Author instrument="Euphonium" />
 			<p>Euphoniums are pleasant sounding low brass instruments. They are often mistaken for baritones. One difference is that euphoniums have upward-facing bells while marching baritones face forwards, for marching purposes.</p>
 			<p>Euphonium players are rare, but nice to meet. Don't forget to say hi when you see a euphonium player!</p>
 

@@ -1,22 +1,13 @@
 import Comment from "./Comment";
-
-const mapping = {
-	"trumpet": 1,
-	"trombone": 2,
-	"euphonium": 3,
-	"flute": 4,
-	"saxophone": 5,
-	"clarinet": 6,
-};
+import { idMappings } from "@/data/instruments";
 
 export default async function CommentsBox ({ instrument }) {
-	const id = mapping[instrument.toLowerCase()];
-	const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`);
+	const id = idMappings[instrument.toLowerCase()];
+	const res = await fetch(`https://dummyjson.com/comments?limit=${instrument.length}&skip=${id * 10}`);
 	const commentsJson = await res.json();
-	const comments = commentsJson.map((comment) => {
-		const authorName = comment.email.split("@")[0].replace(/[_.]/gm, " ");
+	const comments = commentsJson.comments.map((comment) => {
 		return (
-			<Comment key={comment.id} instrument={instrument} author={authorName} text={comment.body} />
+			<Comment key={comment.id} instrument={instrument} author={comment.user.fullName} text={comment.body} likes={comment.likes} />
 		);
 	});
 	return (
