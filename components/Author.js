@@ -1,7 +1,7 @@
-import { idMappings } from "@/data/instruments";
+import { instrumentData } from "@/data/instruments";
 
 export default async function Author ({ instrument }) {
-	const id = idMappings[instrument.toLowerCase()];
+	const id = instrumentData[instrument.toLowerCase()].id;
 	const res = await fetch(`https://dummyjson.com/users/${id}?select=firstName,lastName`);
 	const authorJson = await res.json();
 	const author = authorJson.firstName + " " + authorJson.lastName;

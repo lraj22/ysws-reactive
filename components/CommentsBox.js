@@ -1,8 +1,8 @@
 import Comment from "./Comment";
-import { idMappings } from "@/data/instruments";
+import { instrumentData } from "@/data/instruments";
 
 export default async function CommentsBox ({ instrument }) {
-	const id = idMappings[instrument.toLowerCase()];
+	const id = instrumentData[instrument.toLowerCase()].id;
 	const res = await fetch(`https://dummyjson.com/comments?limit=${instrument.length}&skip=${id * 10}`);
 	const commentsJson = await res.json();
 	const comments = commentsJson.comments.map((comment) => {

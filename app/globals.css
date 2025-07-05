@@ -33,9 +33,10 @@ p {
 
 .cardContainer {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	justify-content: space-between;
-	gap: 2em;
+	gap: 1em 2em;
+	margin: 1em 0;
 }
 
 .card {
@@ -44,7 +45,6 @@ p {
 	padding: 1.5rem 2rem;
 	width: max-content;
 	max-width: 100%;
-	margin: 1em 0;
 	display: inline-block;
 	flex-grow: 1;
 }
