@@ -1,5 +1,13 @@
-# Routes Game
+# Learn about musical instruments!
 
-Try going down as many routes as possible! This was built for Hack Club's YSWS: Reactive.
+Learn about various musical instruments! Includes brass & woodwind instruments. Easy to navigate - learn more in my first Next.js website!
+
+We currently have:
+- Trumpet
+- Trombone
+- Euphonium
+- Flute
+- Saxophone
+- Clarinet
 
 Made with 💖 by Lakshya Raj.
